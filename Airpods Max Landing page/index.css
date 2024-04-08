@@ -1,0 +1,182 @@
+@import "compass/css3";
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.grey {
+  color: #858585 !important;
+}
+.nav-link:hover {
+  background-color: whitesmoke;
+}
+.bgcolor1 {
+  background-color: #ebebeb;
+}
+.bgcolor2 {
+  background-color: #dedede;
+}
+
+.home-c {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.font {
+  font-family: sans-serif;
+}
+
+.bg-text {
+  color: #dedede;
+  font-size: 15vw;
+  margin: 0;
+  left: 0;
+  font-weight: bold;
+  right: 0;
+  top: 30%;
+  position: absolute;
+}
+.hero {
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+}
+.hero img {
+  width: 35vw;
+}
+.text {
+  color: #ebebeb;
+  font-size: 10vw;
+  margin-top: 5vw;
+  font-weight: 1000;
+}
+.overview {
+  margin-top: 135px;
+  left: 0;
+
+  margin-bottom: 0;
+}
+.text-2 {
+  color: black;
+  font-size: 5vw;
+  margin-top: 5vw;
+  font-weight: 1000;
+
+  line-height: 1;
+}
+.text-align {
+  text-align: left !important;
+}
+.soundC {
+  color: #bebebe;
+}
+.soundW {
+  font-weight: 1000 !important;
+}
+button {
+  border-radius: 50px !important;
+  background: #e0e0e0 !important;
+  border: none;
+  outline: none;
+  font-size: 1.5rem !important;
+  padding: 1rem 0.5rem;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff !important;
+}
+button:hover {
+  box-shadow: inset 2px 2px 10px #bebebe, inset -2px -2px 10px #ffffff !important ;
+}
+.round {
+  border-radius: 50% !important;
+  padding: 1.5rem !important;
+  font-weight: 900 !important;
+}
+#smallText {
+  transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+#largeImage {
+  transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 rgba(white, 1);
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+
+  input,
+  textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: "Merriweather", sans-serif;
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+    resize: none;
+
+    &:focus {
+      box-shadow: 0 0px 2px rgba(red, 1) !important;
+    }
+  }
+
+  #input-submit {
+    color: white;
+    background: red;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+    }
+  }
+
+  textarea {
+    height: 126px;
+  }
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+
+}
+
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
